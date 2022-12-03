@@ -40,15 +40,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Special",
-                    "type": "Button",
-                    "id": "8b8b063e-e645-4d2f-ac5a-b52387406a14",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -121,7 +112,7 @@
                 {
                     "name": "",
                     "id": "3eb3213b-ee0e-4382-9064-7a9217803c18",
-                    "path": "",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -132,7 +123,7 @@
                 {
                     "name": "",
                     "id": "6de6e382-ae00-49d9-bcb3-73fd35c20303",
-                    "path": "",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -143,22 +134,11 @@
                 {
                     "name": "",
                     "id": "5a9f09e2-f127-421a-86e7-1e9434130925",
-                    "path": "",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fe1a5a8b-d544-449e-83e1-8fef4d61e86f",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Special",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
