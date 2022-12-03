@@ -539,6 +539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784752249}
   - component: {fileID: 784752250}
+  - component: {fileID: 784752251}
   m_Layer: 0
   m_Name: --Game Manager--
   m_TagString: Untagged
@@ -573,6 +574,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f269405d93ddfdc4b92a7f352825a7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &784752251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784752248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce6e7604caacd8419ae63b6b23b8227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: {x: 0, y: 0}
+  jump: 0
+  attack: 0
+  item: 0
 --- !u!1 &1069109579
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +694,7 @@ GameObject:
   - component: {fileID: 1458029607}
   - component: {fileID: 1458029606}
   - component: {fileID: 1458029605}
+  - component: {fileID: 1458029608}
   m_Layer: 5
   m_Name: Attack
   m_TagString: Untagged
@@ -691,18 +709,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458029603}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.75, y: 1.75, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2095448368}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -332, y: 227}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -195, y: 252}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1458029605
 MonoBehaviour:
@@ -763,7 +781,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4433962, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 5, y: 5, z: 5, w: 5}
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -786,6 +804,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458029603}
   m_CullTransparentMesh: 1
+--- !u!114 &1458029608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458029603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Keyboard>/j
 --- !u!1 &1793232172
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +829,7 @@ GameObject:
   - component: {fileID: 1793232176}
   - component: {fileID: 1793232175}
   - component: {fileID: 1793232174}
+  - component: {fileID: 1793232177}
   m_Layer: 5
   m_Name: Jump
   m_TagString: Untagged
@@ -907,6 +939,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793232172}
   m_CullTransparentMesh: 1
+--- !u!114 &1793232177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793232172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Keyboard>/space
 --- !u!1 &1818965275
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1040,7 @@ GameObject:
   - component: {fileID: 2057495346}
   - component: {fileID: 2057495345}
   - component: {fileID: 2057495344}
+  - component: {fileID: 2057495347}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -1104,6 +1150,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057495342}
   m_CullTransparentMesh: 1
+--- !u!114 &2057495347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057495342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Keyboard>/k
 --- !u!1 &2095448367
 GameObject:
   m_ObjectHideFlags: 0
